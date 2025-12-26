@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Professional Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<div class="content-wrapper">
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">MyPortfolio</h2>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-icon" id="menuIcon">&#9776;</div>
+        </nav>
+    </header>
+
+    <section id="home" class="section home fade-in">
+        <div class="home-content">
+            <h1>Hello, I'm <span>Lini Bel</span></h1>
+            <h3 class="typing"></h3>
+            <p>
+                I design and develop responsive, modern websites with focus on performance, 
+                user experience, and professional aesthetics. I aim to deliver high-quality 
+                web solutions that meet real-world needs.
+            </p>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about fade-in">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                I am a dedicated web developer with a strong foundation in HTML, CSS, and JavaScript.
+                I have developed multiple projects ranging from interactive web apps to responsive 
+                portfolio websites. I love crafting clean, maintainable code with modern design principles.
+            </p>
+            <p>
+                My journey started with small projects, and through continuous learning, I 
+                expanded my skill set to include responsive layouts, dynamic animations, and 
+                front-end frameworks. I enjoy collaborating with others and continuously improving 
+                my technical and creative abilities.
+            </p>
+            <h3>Education</h3>
+            <ul>
+                <li>B.Tech in Computer Science Engineering – XYZ College</li>
+                <li>Currently in 4th Semester</li>
+            </ul>
+            <h3>Experience & Certifications</h3>
+            <ul>
+                <li>Built interactive projects including Temperature Converter, Tic Tac Toe, Stopwatch, and Landing Pages.</li>
+                <li>Completed online certifications in web development and UI/UX design.</li>
+                <li>Experience with responsive design, Git version control, and professional deployment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills fade-in">
+        <h2>My Skills</h2>
+        <p>These are my core competencies and technologies I work with professionally:</p>
+        <div class="skills-container">
+            <div class="skill">
+                <h4>HTML & CSS</h4>
+                <div class="progress-bar-wrapper"><div class="progress-bar" data-percent="95%"></div></div>
+            </div>
+            <div class="skill">
+                <h4>JavaScript</h4>
+                <div class="progress-bar-wrapper"><div class="progress-bar" data-percent="90%"></div></div>
+            </div>
+            <div class="skill">
+                <h4>React & Front-End Frameworks</h4>
+                <div class="progress-bar-wrapper"><div class="progress-bar" data-percent="85%"></div></div>
+            </div>
+            <div class="skill">
+                <h4>Responsive Design</h4>
+                <div class="progress-bar-wrapper"><div class="progress-bar" data-percent="92%"></div></div>
+            </div>
+            <div class="skill">
+                <h4>UI/UX Design</h4>
+                <div class="progress-bar-wrapper"><div class="progress-bar" data-percent="80%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects fade-in">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>🌐 Responsive Landing Page</h3>
+                <p>A fully responsive landing page designed with HTML, CSS, and JavaScript to showcase a product or portfolio professionally.</p>
+            </div>
+            <div class="project-card">
+                <h3>⏱️ Stopwatch Web App</h3>
+                <p>An interactive stopwatch application with start, stop, reset, and lap functionalities, built using JavaScript and styled for responsive use.</p>
+            </div>
+            <div class="project-card">
+                <h3>❌ Tic Tac Toe Game</h3>
+                <p>A classic Tic Tac Toe game built with HTML, CSS, and JavaScript. Fully responsive and interactive for two players.</p>
+            </div>
+            <div class="project-card">
+                <h3>🌡️ Temperature Converter</h3>
+                <p>A professional temperature converter allowing conversion between Celsius, Fahrenheit, and Kelvin with a clean and responsive design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact fade-in">
+        <h2>Contact Me</h2>
+        <p>If you want to collaborate, offer an internship, or have freelance opportunities, reach out using the form below:</p>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Lini Bel | Web Developer</p>
+    </footer>
+
+</div>
+</body>
+</html>

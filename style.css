@@ -1,0 +1,63 @@
+* {margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI",sans-serif;}
+body {transition:0.3s;}
+canvas#bgCanvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;}
+.content-wrapper{position:relative;z-index:1;}
+
+.section{min-height:100vh;padding:80px 40px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;}
+h1{font-size:3.5rem; margin-bottom:20px;}
+h2{font-size:2.8rem; margin-bottom:20px;}
+h3{font-size:2.2rem; margin-bottom:15px;}
+h4{font-size:1.6rem; margin-bottom:8px;}
+p{margin-bottom:20px; line-height:1.8; font-size:1.3rem; max-width:900px;}
+
+header{position:sticky;top:0; z-index:10; background:rgba(31,41,51,0.95); padding:15px 50px; display:flex; justify-content:space-between; align-items:center;}
+.logo{color:#38bdf8; font-size:28px; font-weight:bold;}
+.nav-links{list-style:none; display:flex; gap:30px;}
+.nav-links a{color:white; text-decoration:none; font-weight:600; font-size:1.3rem; transition:0.3s;}
+.nav-links a:hover{color:#38bdf8;}
+.menu-icon{display:none; font-size:32px; cursor:pointer; color:white;}
+
+.home {
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;        
+    gap: 40px;
+    min-height: 100vh;           
+    text-align: center;          
+}
+
+.home-content {
+    max-width: 700px;
+    text-align: center;          
+}
+
+.btn{background:#38bdf8; color:black; padding:15px 30px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:1.3rem; transition:0.3s;}
+.btn:hover{background:#0ea5e9; color:white;}
+
+.skills-container{max-width:900px; display:flex; flex-direction:column; gap:25px;}
+.progress-bar-wrapper{background:#ddd; border-radius:8px; overflow:hidden; height:20px;}
+.progress-bar{height:100%; background:#38bdf8; width:0; transition:width 1s;}
+
+.projects-container{display:flex; flex-wrap:wrap; gap:25px; justify-content:center; max-width:1200px;}
+.project-card{background:rgba(255,255,255,0.9); padding:25px; border-radius:12px; width:320px; transition:transform 0.3s; display:flex; flex-direction:column; align-items:center; text-align:center;}
+.project-card:hover{transform:translateY(-8px);}
+.project-card h3{font-size:1.9rem; margin-bottom:10px;}
+
+.contact-form{max-width:500px; display:flex; flex-direction:column; gap:12px;}
+.contact-form input, .contact-form textarea{padding:14px; width:100%; border-radius:6px; border:1px solid #ccc; font-size:1.2rem;}
+.contact-form button{padding:16px; border:none; background:#38bdf8; font-size:1.3rem; cursor:pointer; border-radius:6px; font-weight:bold; transition:0.3s;}
+.contact-form button:hover{background:#0ea5e9; color:white;}
+
+footer{padding:20px; text-align:center; background:rgba(31,41,51,0.95); color:white; font-size:1.2rem;}
+
+.fade-in{opacity:0; transform:translateY(40px); transition:all 0.8s ease;}
+.fade-in.show{opacity:1; transform:translateY(0);}
+
+@media(max-width:1024px){.home{text-align:center;}}
+@media(max-width:768px){
+    .nav-links{position:absolute; top:65px; right:0; background:rgba(31,41,51,0.95); flex-direction:column; width:200px; display:none; padding:15px;}
+    .nav-links.active{display:flex;}
+    .menu-icon{display:block;}
+    .project-card{width:90%;}
+}
